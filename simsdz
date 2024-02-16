@@ -95,17 +95,27 @@ class Human:
         self.gladness -= 5
         self.satiety -= 2
         self.thirst -= 1
-    def days_indexes(self, day):
-        d = f"Tody the{day} of {self.name}'s life"
+     def days_indexes(self, day):
+        d = f"Today the {day} of {self.name}'s life"
         print(f"{d:=^50}")
         human_i = f"{self.name}'s indexes"
         print(f"{human_i:=^50}")
+        print(f"{self.name}'s job is = {self.get_job()}")
+        print(f"{self.name}'s car is = {self.get_home()}")
+        print(f"{self.name}'s auto is = {self.get_car()}")
+        print(f"{self.name}'s enough money is = {self.money}")
+        print(f"{self.name}'s gladness is = {self.gladness}")
+        print(f"{self.name}'s satiety is = {self.satiety}")
+        print(f"{self.name}'s thirst is = {self.thirst}")
         home_i = "Home indexes"
         print(f"{home_i:=^50}")
+        print(f"Home mes is {self.home.mess}")
+        print(f"Home food is {self.home.food}")
+        print(f"Home water is {self.home.water}")
         car_i = f"{self.car.brand} car indexes"
         print(f"{car_i:=^50}")
         print(f"Fuel = {self.car.fuel}")
-        print((f"Strength = {self.car.strength}"))
+        print(f"Strength = {self.car.strength}")
 
     def is_alive(self):
         if self.gladness <= 0:
