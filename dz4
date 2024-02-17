@@ -1,0 +1,18 @@
+class Razer:
+  def init__(self):
+    # super().__init__()
+    self.buttons = 6
+    self.logotype = "razer 3 snakes"
+    self.company = "Razer"
+class Wired:
+  def __init)__(self):
+    super().init__()
+    self.wired = "Wired mouse"
+    self.rgb = "Have rgb"
+class Mouse (Wired, Razer):
+   def printer(self):
+    print(self.buttons)
+    print(self.logotype)
+    print(self.company)
+    print(self.rgb)
+    print(self.wired)
